@@ -11,3 +11,4 @@ Tirsdag: release 1 (scrummaster Jens)
 Onsdag: release 1 (scrummaster ?)
 Torsdag: release 2 (scrummaster ?)
 Fredag: release 2 (scrummaster ?)
+=======
