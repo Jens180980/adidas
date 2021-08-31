@@ -13,7 +13,7 @@
   margin: auto;
   height: 150px;
   /* placeholder */
-  background-color: lightcoral;
+  background-color: whitesmoke;
   /*placeholder*/
 }
 
@@ -23,10 +23,19 @@ body {
   /*placeholder*/
 }
 
+h2 {
+  padding-left: 2rem;
+}
+
+section {
+  padding: 2rem 2rem;
+}
+
 main {
   max-width: 1200px;
   margin: auto;
   padding: 3em 0;
+  background-color: #c8e9a0;
 }
 
 main svg rect {
@@ -83,7 +92,7 @@ footer {
   height: 300px;
   /*placeholder*/
   width: 100%;
-  background-color: orange;
+  background-color: #fcb0b3;
   /*placeholder*/
 }
 /*# sourceMappingURL=main.css.map */
