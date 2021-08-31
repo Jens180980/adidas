@@ -12,3 +12,5 @@ Onsdag: release 1 (scrummaster ?)
 Torsdag: release 2 (scrummaster ?)
 Fredag: release 2 (scrummaster ?)
 =======
+
+Link til Zenhub: https://app.zenhub.com/workspaces/adidas-gruppen-612cb4df4709f1001dcd8644/board
