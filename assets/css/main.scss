@@ -107,22 +107,58 @@ main {
     height: 300px; /* placeholder*/
     background-color: lightcoral; /*placeholder*/
 }
+#history{
 
-#aboutUs {
+    h2{
+        display: flex;
+        justify-content: center;  
+        margin-bottom: 2%;
+    }
+    figure{
+        margin: auto;
+        width: 70%;
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 1%;
+        img{
+            width: 100%;
+        }
+    }
+    p{
+        text-align: center;
+        width: 40%; 
+        margin: auto;
+        margin-bottom: 2%;
+    }
+}
+#grid-history{
+    .btn{
+        margin-left: 43%;
+        font-size: 1vw; 
+        margin-bottom: 1%;
+        padding: 1% 2% 1%;
+        &:hover{
+            cursor: pointer; 
+       }
+    }
+}
+article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
     width: 100%;
     margin: auto;
-    padding: 4em 0em;
-    height: 500px; /*placeholder*/
-    background-color: lightcoral; /*placeholder*/
+    iframe{
+        width: 100%;
+    }
+    p{
+        margin-bottom: 3%;
+        text-align: center;
+    }
 }
-
-#aboutArticle {
-    width: 95%;
-    height: 100%;
-    margin: auto;
-    background-color: whitesmoke; /*placeholder*/
-}
-
 footer {
     height: 300px; /*placeholder*/
     width: 100%;
