@@ -95,16 +95,41 @@ main {
   background-color: #c8e9a0;
 }
 
-main svg rect {
-  /*placeholder*/
-  fill: lightblue;
-  margin: auto;
+#heroSection figure {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 40% 60%;
+      grid-template-columns: 40% 60%;
+  width: 100%;
 }
 
-#heroSection {
-  padding-top: 4em;
+#heroSection figure h3 {
+  padding: 15px 0 0 5%;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+#heroSection figure p {
+  padding: 20px 0 0 5%;
+  font-size: 1.5rem;
+}
+
+#heroSection figure p a {
+  color: black;
+  font-weight: bold;
+}
+
+#heroSection figure p a:hover {
+  text-decoration: underline;
+}
+
+#heroSection figure figcaption {
   width: 100%;
-  margin: auto;
+}
+
+#heroSection figure img {
+  height: auto;
+  width: 100%;
 }
 
 #sektionerSection {
