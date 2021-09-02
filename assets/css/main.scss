@@ -80,14 +80,39 @@ main {
     margin: auto;
     padding: 3em 0;
     background-color: $white; //Placeholder
-
 }
 
 #heroSection {
-    padding-top: 4em;
-    width: 100%;
-    margin: auto;
-
+    figure {
+        display: grid;
+        grid-template-columns: 40% 60%;
+        width: 100%;
+        h3 {
+            padding: 15px 0 0 5%;
+            font-size: 2rem;
+            text-transform: uppercase;
+            align-self: center;
+        }
+        p {
+            padding: 20px 0 0 5%;
+            font-size: 1.5rem;
+            align-self: center;
+            a {
+                color: black;
+                font-weight: bold;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+        figcaption {
+            width: 100%;
+        }
+        img {
+            height: auto;
+            width: 100%;
+        }
+    }
 }
 
 #sektionerSection {
