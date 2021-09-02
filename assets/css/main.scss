@@ -22,7 +22,7 @@ $white: whitesmoke;
     width: 100%;
     height: 100%;
     background: white;
-    display: flex;
+    display: none;
     //display: flex, når vi vil gerne have den, ellers display:none
     justify-content: center;
     align-items: center;
@@ -87,20 +87,53 @@ svg {
         display: flex;
         align-items: center;
         justify-content: flex-end;
-        
-        ul{ 
+       
+        .mainmenuitems{ 
             width: 50%;
             display: flex;  
+            cursor: pointer;
             li{ 
                 width: 70%;
                 display: flex;
                 justify-content: flex-end;
+                font-size: 2rem;
                 a{
-                    font-size: 2em;
+                    font-size: 2rem;
                     color: black;
                 }
             }
         }
+        .menuwrap{
+            position: absolute;
+            background-color: $white;
+            top: 103%;
+            left: 0;
+            width: 100vw;
+            height: 0;
+            overflow: hidden;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            justify-content: center;
+            border-bottom: 1px solid black;
+        .menuitems {
+            margin: 1rem;
+            margin-left: 10rem;
+            padding-left: 2rem;
+            
+            h3{
+                margin-bottom: 0.5rem;
+            }
+            li {
+                margin-bottom: 0.5rem;
+                font-size: 1rem;
+                cursor: pointer;
+                transition: color 0.5s linear;
+            }
+            li:hover {
+                color: $pink;
+            }
+        }
+    }
     }
 }}
 
@@ -180,66 +213,6 @@ main {
         font-size: 130%;
         color: $white;
     }
-}
-#history{
-
-    h2{
-        display: flex;
-        justify-content: center;  
-        margin-bottom: 2%;
-    }
-    figure{
-        margin: auto;
-        width: 70%;
-        display: grid;
-        grid-template-columns: auto auto;
-        gap: 1%;
-        img{
-            width: 100%;
-        }
-    }
-    p{
-        text-align: center;
-        width: 40%; 
-        margin: auto;
-        margin-bottom: 2%;
-    }
-}
-#grid-history{
-    .btn{
-        margin-left: 43%;
-        font-size: 1vw; 
-        margin-bottom: 1%;
-        padding: 1% 2% 1%;
-        &:hover{
-            cursor: pointer; 
-       }
-    }
-}
-article{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    overflow: hidden;
-    max-height: 0;
-    transition: max-height 0.2s ease-out;
-    width: 100%;
-    margin: auto;
-    iframe{
-        width: 100%;
-    }
-    p{
-        margin-bottom: 3%;
-        text-align: center;
-    }
-}
-
-
-
-#offers {
-    display: flex;
-    justify-content: center;
-    cursor: pointer;
 }
 
 // Sektioner slideshows SCSS
@@ -393,6 +366,91 @@ article{
 .slideShow :hover li,
 .slideShow :hover {
    animation-play-state: paused;
+}
+
+// About sektion
+#about {
+    padding-top: 8rem;
+
+    h3{
+        text-align: center;
+        font-size: 2rem;
+        background-color: $dark-green;
+        padding: 1rem;
+        color:$white;
+    }
+    p{
+        font-size: 1.5rem;
+        padding: 1rem 0;
+    }
+}
+
+#history{
+
+    h2{
+        display: flex;
+        justify-content: center;  
+        margin-bottom: 2%;
+    }
+    figure{
+        margin: auto;
+        width: 70%;
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 1%;
+        img{
+            width: 100%;
+        }
+    }
+    p{
+        text-align: center;
+        width: 40%; 
+        margin: auto;
+        margin-bottom: 2%;
+    }
+}
+#grid-history{
+
+    div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .btn{
+        width: 50%;
+        // margin-left: 43%;
+        font-size: 1vw; 
+        margin-bottom: 1%;
+        padding: 1% 2% 1%;
+        background-color: $bordeaux;
+        color: $white;
+        font-weight: 700;
+        &:hover{
+            cursor: pointer; 
+       }
+    }
+}
+article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+    width: 100%;
+    margin: auto;
+
+    p{
+        margin-bottom: 3%;
+        text-align: center;
+    }
+}
+
+// Annonce
+#offers {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
 }
 
 footer {
