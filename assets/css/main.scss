@@ -173,8 +173,9 @@ main {
         }
         p {
             padding: 20px 0 0 5%;
-            font-size: 1.5rem;
+            font-size: 1.7vw;
             align-self: center;
+            line-height: 2.4vw;
             a {
                 color: black;
                 font-weight: bold;
@@ -185,6 +186,8 @@ main {
         }
         figcaption {
             width: 100%;
+            height: 85.8%;
+            background-color: $turkis;
         }
         img {
             height: auto;
@@ -237,10 +240,10 @@ main {
 
 .slideShow {
     background: #000;
-    border: 5px solid #eaeaea;
-    box-shadow: 1px 1px 5px rgba(0,0,0,0.7);
-    height: 400px;
-    width: 400px;
+    border: 0.5em solid $white;
+    box-shadow: 0.2em 0.2em 0.5em rgba(0,0,0,0.7);
+    height: 18vw;
+    width: 18vw;
     //object-fit: fill; //måske skal det her bruges - prøver at fitte billeder til boksen.
     // margin: 40px auto 0px;
     overflow: visible;
@@ -251,15 +254,15 @@ main {
         position: relative;
     }
     li {
-        width: 400px;  /* Width Image */
-        height: 400px; /* Height Image */
+        width: 18vw;  /* Width Image */
+        height: 18vw; /* Height Image */
         position: absolute;
         top: -435px; /* Original Position - Outside of the Slider */
         list-style: none; 
     }
     img {
-        height: 400px;
-        width: 400px;
+        height: 18vw;
+        width: 18vw;
         object-fit: cover;
         // overflow: hidden;
     }
@@ -267,7 +270,7 @@ main {
 
 #mask {
     overflow: hidden;
-    height: 400px;
+    height: 18vw;
 }
 
 
@@ -346,18 +349,18 @@ main {
 
 .tooltip {
     background: rgba(0,0,0,0.7);
-    width: 300px;
-    height: 60px;
+    width: 80%;
+    height: 20%;
     position: relative;
-    bottom: 75px;
+    bottom: 26%;
     left: 0px;
 
     h1 {
         color: #fff;
-        font-size: 24px;
+        font-size: 100%;
         font-weight: 300;
-        line-height: 60px;
-        padding: 0 0 0 10px; 
+        line-height: 4vw;
+        padding: 0 0 0 1vw; 
     }
     
  }
@@ -540,4 +543,3 @@ footer {
         }
     }
 }
-

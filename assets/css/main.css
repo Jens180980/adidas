@@ -243,10 +243,11 @@ main {
 
 #heroSection figure p {
   padding: 20px 0 0 5%;
-  font-size: 1.5rem;
+  font-size: 1.7vw;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  line-height: 2.4vw;
 }
 
 #heroSection figure p a {
@@ -260,6 +261,8 @@ main {
 
 #heroSection figure figcaption {
   width: 100%;
+  height: 85.8%;
+  background-color: #6dd3ce;
 }
 
 #heroSection figure img {
@@ -322,11 +325,11 @@ main {
 
 .slideShow {
   background: #000;
-  border: 5px solid #eaeaea;
-  -webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
-          box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
-  height: 400px;
-  width: 400px;
+  border: 0.5em solid whitesmoke;
+  -webkit-box-shadow: 0.2em 0.2em 0.5em rgba(0, 0, 0, 0.7);
+          box-shadow: 0.2em 0.2em 0.5em rgba(0, 0, 0, 0.7);
+  height: 18vw;
+  width: 18vw;
   overflow: visible;
   position: relative;
 }
@@ -338,9 +341,9 @@ main {
 }
 
 .slideShow li {
-  width: 400px;
+  width: 18vw;
   /* Width Image */
-  height: 400px;
+  height: 18vw;
   /* Height Image */
   position: absolute;
   top: -435px;
@@ -349,15 +352,15 @@ main {
 }
 
 .slideShow img {
-  height: 400px;
-  width: 400px;
+  height: 18vw;
+  width: 18vw;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
 #mask {
   overflow: hidden;
-  height: 400px;
+  height: 18vw;
 }
 
 .firstAnimation {
@@ -775,19 +778,19 @@ main {
 
 .tooltip {
   background: rgba(0, 0, 0, 0.7);
-  width: 300px;
-  height: 60px;
+  width: 80%;
+  height: 20%;
   position: relative;
-  bottom: 75px;
+  bottom: 26%;
   left: 0px;
 }
 
 .tooltip h1 {
   color: #fff;
-  font-size: 24px;
+  font-size: 100%;
   font-weight: 300;
-  line-height: 60px;
-  padding: 0 0 0 10px;
+  line-height: 4vw;
+  padding: 0 0 0 1vw;
 }
 
 .slideShow :hover li,
