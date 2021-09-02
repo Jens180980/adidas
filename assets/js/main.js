@@ -1,3 +1,9 @@
+
+window.addEventListener("load", function () {
+    const loader = document.querySelector(".loader");
+    loader.className += " hidden"; // class "loader hidden"
+});
+
 // Formvalidering - Jens
 
 const message = document.getElementById('message-wrap')
