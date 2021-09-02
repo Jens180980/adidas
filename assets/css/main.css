@@ -65,8 +65,8 @@
 }
 
 .loader.hidden {
-  -webkit-animation: fadeOut 4s;
-          animation: fadeOut 4s;
+  -webkit-animation: fadeOut 2s;
+          animation: fadeOut 2s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
