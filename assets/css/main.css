@@ -15,9 +15,7 @@
   width: 100%;
   height: 100%;
   background: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -65,8 +63,8 @@
 }
 
 .loader.hidden {
-  -webkit-animation: fadeOut 3s;
-          animation: fadeOut 3s;
+  -webkit-animation: fadeOut 2s;
+          animation: fadeOut 2s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
@@ -137,14 +135,15 @@
           justify-content: flex-end;
 }
 
-#headerMain #headerContent nav ul {
+#headerMain #headerContent nav .mainmenuitems {
   width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  cursor: pointer;
 }
 
-#headerMain #headerContent nav ul li {
+#headerMain #headerContent nav .mainmenuitems li {
   width: 70%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -152,11 +151,52 @@
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  font-size: 2rem;
 }
 
-#headerMain #headerContent nav ul li a {
-  font-size: 2em;
+#headerMain #headerContent nav .mainmenuitems li a {
+  font-size: 2rem;
   color: black;
+}
+
+#headerMain #headerContent nav .menuwrap {
+  position: absolute;
+  background-color: whitesmoke;
+  top: 103%;
+  left: 0;
+  width: 100vw;
+  height: 0;
+  overflow: hidden;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-bottom: 1px solid black;
+}
+
+#headerMain #headerContent nav .menuwrap .menuitems {
+  margin: 1rem;
+  margin-left: 10rem;
+  padding-left: 2rem;
+}
+
+#headerMain #headerContent nav .menuwrap .menuitems h3 {
+  margin-bottom: 0.5rem;
+}
+
+#headerMain #headerContent nav .menuwrap .menuitems li {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  -webkit-transition: color 0.5s linear;
+  transition: color 0.5s linear;
+}
+
+#headerMain #headerContent nav .menuwrap .menuitems li:hover {
+  color: #fcb0b3;
 }
 
 body {
@@ -201,10 +241,11 @@ main {
 
 #heroSection figure p {
   padding: 20px 0 0 5%;
-  font-size: 1.5rem;
+  font-size: 1.7vw;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  line-height: 2.4vw;
 }
 
 #heroSection figure p a {
@@ -253,86 +294,6 @@ main {
   color: whitesmoke;
 }
 
-#history h2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 2%;
-}
-
-#history figure {
-  margin: auto;
-  width: 70%;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: auto auto;
-      grid-template-columns: auto auto;
-  gap: 1%;
-}
-
-#history figure img {
-  width: 100%;
-}
-
-#history p {
-  text-align: center;
-  width: 40%;
-  margin: auto;
-  margin-bottom: 2%;
-}
-
-#grid-history .btn {
-  margin-left: 43%;
-  font-size: 1vw;
-  margin-bottom: 1%;
-  padding: 1% 2% 1%;
-}
-
-#grid-history .btn:hover {
-  cursor: pointer;
-}
-
-article {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  overflow: hidden;
-  max-height: 0;
-  -webkit-transition: max-height 0.2s ease-out;
-  transition: max-height 0.2s ease-out;
-  width: 100%;
-  margin: auto;
-}
-
-article iframe {
-  width: 100%;
-}
-
-article p {
-  margin-bottom: 3%;
-  text-align: center;
-}
-
-#offers {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  cursor: pointer;
-}
-
 .figureContainer {
   display: -ms-grid;
   display: grid;
@@ -362,11 +323,11 @@ article p {
 
 .slideShow {
   background: #000;
-  border: 5px solid #eaeaea;
-  -webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
-          box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
-  height: 400px;
-  width: 400px;
+  border: 0.5em solid whitesmoke;
+  -webkit-box-shadow: 0.2em 0.2em 0.5em rgba(0, 0, 0, 0.7);
+          box-shadow: 0.2em 0.2em 0.5em rgba(0, 0, 0, 0.7);
+  height: 18vw;
+  width: 18vw;
   overflow: visible;
   position: relative;
 }
@@ -378,9 +339,9 @@ article p {
 }
 
 .slideShow li {
-  width: 400px;
+  width: 18vw;
   /* Width Image */
-  height: 400px;
+  height: 18vw;
   /* Height Image */
   position: absolute;
   top: -435px;
@@ -389,15 +350,15 @@ article p {
 }
 
 .slideShow img {
-  height: 400px;
-  width: 400px;
+  height: 18vw;
+  width: 18vw;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
 #mask {
   overflow: hidden;
-  height: 400px;
+  height: 18vw;
 }
 
 .firstAnimation {
@@ -815,25 +776,134 @@ article p {
 
 .tooltip {
   background: rgba(0, 0, 0, 0.7);
-  width: 300px;
-  height: 60px;
+  width: 80%;
+  height: 20%;
   position: relative;
-  bottom: 75px;
+  bottom: 26%;
   left: 0px;
 }
 
 .tooltip h1 {
   color: #fff;
-  font-size: 24px;
+  font-size: 100%;
   font-weight: 300;
-  line-height: 60px;
-  padding: 0 0 0 10px;
+  line-height: 4vw;
+  padding: 0 0 0 1vw;
 }
 
 .slideShow :hover li,
 .slideShow :hover {
   -webkit-animation-play-state: paused;
           animation-play-state: paused;
+}
+
+#about {
+  padding-top: 8rem;
+}
+
+#about h3 {
+  text-align: center;
+  font-size: 2rem;
+  background-color: #5c6f68;
+  padding: 1rem;
+  color: whitesmoke;
+}
+
+#about p {
+  font-size: 1.5rem;
+  padding: 1rem 0;
+}
+
+#history h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 2%;
+}
+
+#history figure {
+  margin: auto;
+  width: 70%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  gap: 1%;
+}
+
+#history figure img {
+  width: 100%;
+}
+
+#history p {
+  text-align: center;
+  width: 40%;
+  margin: auto;
+  margin-bottom: 2%;
+}
+
+#grid-history div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#grid-history .btn {
+  width: 50%;
+  font-size: 1vw;
+  margin-bottom: 1%;
+  padding: 1% 2% 1%;
+  background-color: #653239;
+  color: whitesmoke;
+  font-weight: 700;
+}
+
+#grid-history .btn:hover {
+  cursor: pointer;
+}
+
+article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  max-height: 0;
+  -webkit-transition: max-height 0.2s ease-out;
+  transition: max-height 0.2s ease-out;
+  width: 100%;
+  margin: auto;
+}
+
+article p {
+  margin-bottom: 3%;
+  text-align: center;
+}
+
+#offers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
 }
 
 footer {
