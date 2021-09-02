@@ -28,9 +28,7 @@ $white: whitesmoke;
     align-items: center;
 svg {
     position: relative;
-    animation: pulse 2s linear infinite;
-    animation-iteration-count: 2;
-    
+    animation: pulse 2s linear infinite;    
 }
     @keyframes pulse {
         0% {
@@ -48,7 +46,7 @@ svg {
 }
 
 .loader.hidden {
-    animation: fadeOut 4s;
+    animation: fadeOut 3s;
     animation-fill-mode: forwards;
 }
 
