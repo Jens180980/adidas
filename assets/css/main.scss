@@ -16,12 +16,37 @@ $white: whitesmoke;
 /*font inkluderer 100, 300, 400, 500, 600, 700, 900 i normal, bold og italic*/
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,300;1,400;1,500;1,600;1,700;1,900&display=swap');
 
+// General settings
+body {
+    margin: auto;
+    background-color: whitesmoke; /*placeholder*/
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+h2 {
+    padding-left: 2rem;
+}
+
+section {
+    padding: 2rem 2rem;
+}
+
+main {
+    max-width: 80%;
+    margin: auto;
+    padding: 3em 0;
+    background-color: $white; //Placeholder
+}
+
+// Pageloader
 .loader {
     position: fixed;
     z-index: 99;
     width: 100%;
     height: 100%;
     background: white;
+    //display: flex;
     display: none;
     //display: flex, når vi vil gerne have den, ellers display:none
     justify-content: center;
@@ -61,6 +86,7 @@ svg {
     }
 }
 
+// Header section
 #headerMain {
     width: 100%;
     margin: auto;
@@ -84,81 +110,74 @@ svg {
         width: 100%;
         display: flex;
         align-items: center;
-        justify-content: flex-end;
-       
-        .mainmenuitems{ 
-            width: 50%;
-            display: flex;  
+        justify-content: space-around;
+
+
+        .drop-from, #about-trigger {
+            height: 100%;
+            width: 100%;
+            padding: 5rem 0 0 5rem;
+        }
+
+        .drop-btn, #about-trigger {
+            background-color: transparent;
+            border: none;
+            font-size: 2rem;
+            color: black;
             cursor: pointer;
-            li{ 
-                width: 70%;
-                display: flex;
-                justify-content: flex-end;
-                font-size: 2rem;
-                a{
-                    font-size: 2rem;
-                    color: black;
-                }
+        }
+       
+        .dropdown-content {
+            position: absolute;
+            top: 100%;
+            left: 0%;
+            display: none;
+            width: 100vw;
+            padding: 1rem;
+            background-color: $white;
+            border-top: 1px solid gray;
+            border-bottom: 1px solid gray;
+
+            h2 {
+                padding: 0 0 1rem 14rem;
             }
         }
-        .menuwrap{
-            position: absolute;
-            background-color: $white;
-            top: 103%;
-            left: 0;
-            width: 100vw;
-            height: 0;
-            overflow: hidden;
+
+        .drop-from:hover .dropdown-content {
+            display: block;
+        }
+
+        .drop-from:hover .drop-btn{
+            text-decoration: underline;
+        }
+
+        .column a:hover {
+            color: $pink;
+        }
+
+        .items-wrap {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
-            justify-content: center;
-            border-bottom: 1px solid black;
-        .menuitems {
-            margin: 1rem;
-            margin-left: 10rem;
-            padding-left: 2rem;
-            
-            h3{
+
+            a, h3{
+                display: block;
+                color: black;
                 margin-bottom: 0.5rem;
             }
-            li {
-                margin-bottom: 0.5rem;
-                font-size: 1rem;
-                cursor: pointer;
-                transition: color 0.5s linear;
-            }
-            li:hover {
-                color: $pink;
+
+            .column {
+                padding-left: 14rem;
             }
         }
     }
-    }
-}}
-
-
-body {
-    margin: auto;
-    background-color: whitesmoke; /*placeholder*/
-    width: 100vw;
-    overflow-x: hidden;
+}
 }
 
-h2 {
-    padding-left: 2rem;
-}
-
-section {
-    padding: 2rem 2rem;
-}
-
-main {
-    max-width: 80%;
-    margin: auto;
-    padding: 3em 0;
-    background-color: $white; //Placeholder
-}
-
+// Hero section
 #heroSection {
+
+    padding: 0;
+    
     figure {
         display: grid;
         grid-template-columns: 40% 60%;
@@ -194,12 +213,14 @@ main {
     }
 }
 
+// Collection section
 #sektionerSection {
     padding-top: 8em;
     padding-bottom: 8em;
     margin: auto;
-    height: 20vw; /* placeholder -  er blevet ændret, måske det er godt.*/
-    background-color: $dark-green; /*placeholder*/
+    height: 20vw; 
+    background-color: $dark-green; 
+
     h2 {
         font-size: 300%;
         width: 100%;
@@ -369,9 +390,9 @@ main {
    animation-play-state: paused;
 }
 
-// About sektion
+// Om section
 #about {
-    padding-top: 8rem;
+    padding: 8rem 0 0 0;
 
     h3{
         text-align: center;
@@ -379,6 +400,7 @@ main {
         background-color: $dark-green;
         padding: 1rem;
         color:$white;
+
     }
     p{
         font-size: 1.5rem;
@@ -400,14 +422,12 @@ main {
         grid-template-columns: auto auto;
         gap: 1%;
         img{
-            width: 100%;
+        width: 100%;
         }
     }
-    p{
+    h4 {
         text-align: center;
-        width: 40%; 
-        margin: auto;
-        margin-bottom: 2%;
+        margin-top: 2rem;
     }
 }
 #grid-history{
@@ -419,7 +439,6 @@ main {
     }
     .btn{
         width: 50%;
-        // margin-left: 43%;
         font-size: 1vw; 
         margin-bottom: 1%;
         padding: 1% 2% 1%;
@@ -430,30 +449,34 @@ main {
             cursor: pointer; 
        }
     }
-}
-article{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    overflow: hidden;
-    max-height: 0;
-    transition: max-height 0.2s ease-out;
-    width: 100%;
-    margin: auto;
-
-    p{
-        margin-bottom: 3%;
-        text-align: center;
+    article{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height 0.2s ease-out;
+        width: 100%;
+        margin: auto;
+    
+        p{
+            margin-bottom: 3%;
+        }
     }
+
 }
 
-// Annonce
+// Annonce section
 #offers {
     display: flex;
     justify-content: center;
     cursor: pointer;
+    img{
+        width: 100%;
+    }
 }
 
+// Footer & form section
 footer {
     width: 100%;
     background-color: $pink;
@@ -496,7 +519,8 @@ footer {
         }
 
         fieldset {
-            border: none;
+            border: 1px solid black;
+            padding: 1rem;
         }
 
         .fields {
@@ -506,6 +530,7 @@ footer {
                 padding: 0.5rem;
                 width: 70%;
                 background-color: $white;
+                border: none;
             }
         }
 
