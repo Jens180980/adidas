@@ -1,0 +1,58 @@
+@media screen and (max-width: 980px) {
+  body {
+    background-color: #fc6;
+  }
+  body #headerMain #headerContent nav .dropdown-content h2 {
+    padding-left: 10%;
+  }
+  body #headerMain #headerContent .items-wrap .column {
+    padding-left: 30%;
+  }
+  body #grid-history .btn {
+    width: 70%;
+    font-size: 1.7vw;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  body {
+    background-color: #9c9;
+  }
+  body #heroSection figure {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+  }
+  body #heroSection figure h3 {
+    padding: 0;
+  }
+  body #heroSection figure p {
+    font-size: 2.5vw;
+    padding: 0;
+  }
+  body #heroSection figure figcaption {
+    height: 100%;
+  }
+  body #history figure {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+  }
+  body #history p {
+    font-size: 3vw;
+  }
+  body #grid-history .btn {
+    width: 100%;
+    font-size: 3vw;
+  }
+  body #grid-history p {
+    font-size: 3vw;
+  }
+  body #footer-wrap {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+  }
+  body #footer-wrap section {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+  }
+}
+/*# sourceMappingURL=media.css.map */
