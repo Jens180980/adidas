@@ -1,0 +1,81 @@
+
+//COLOR MODS
+$bg-yellow: #fc6;
+$bg-green: #9c9;
+
+
+//BREAKPOINTS
+$tablet: 980px;
+$mobile: 580px;
+
+@media screen and (max-width: $tablet) {
+  body{
+    background-color: $bg-yellow; 
+    #headerMain{ 
+        #headerContent{
+            nav{
+                .dropdown-content{
+
+                    h2{
+                        padding-left: 10%;
+                    }
+                }
+            }
+            .items-wrap{
+                .column{
+                    padding-left: 30%;
+                }
+            }
+        }
+    }
+    #grid-history{
+        .btn{
+            width: 70%;
+            font-size: 1.7vw;
+        }
+    }
+  }
+}
+@media screen and (max-width: $mobile){
+    body{
+    background-color: $bg-green;
+        #heroSection{
+            figure{
+                grid-template-columns: auto;
+                h3{
+                    padding: 0;
+                }
+                p{
+                    font-size: 2.5vw;
+                    padding: 0;
+                }
+                figcaption{
+                    height: 100%;
+                }
+            }
+        }
+        #history{
+            figure{
+                grid-template-columns: auto;
+            }
+            p{
+                font-size: 3vw;
+            }
+        }
+        #grid-history{
+            .btn{
+                width: 100%;
+                font-size: 3vw;
+            }
+            p{
+                font-size: 3vw;
+            }
+        }
+        #footer-wrap{
+            grid-template-columns: auto;
+            section{
+                grid-template-columns: auto;
+            }
+        }
+    }
+}
