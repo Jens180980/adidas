@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,300;1,400;1,500;1,600;1,700;1,900&display=swap");
 * {
   margin: 0;
@@ -9,13 +8,38 @@
 }
 
 /*font inkluderer 100, 300, 400, 500, 600, 700, 900 i normal, bold og italic*/
+body {
+  margin: auto;
+  background-color: whitesmoke;
+  /*placeholder*/
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+h2 {
+  padding-left: 2rem;
+}
+
+section {
+  padding: 2rem 2rem;
+}
+
+main {
+  max-width: 80%;
+  margin: auto;
+  padding: 3em 0;
+  background-color: whitesmoke;
+}
+
 .loader {
   position: fixed;
   z-index: 99;
   width: 100%;
   height: 100%;
   background: white;
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -130,96 +154,71 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
-#headerMain #headerContent nav .mainmenuitems {
-  width: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+#headerMain #headerContent nav .drop-from, #headerMain #headerContent nav #about-trigger {
+  height: 100%;
+  width: 100%;
+  padding: 5rem 0 0 5rem;
+}
+
+#headerMain #headerContent nav .drop-btn, #headerMain #headerContent nav #about-trigger {
+  background-color: transparent;
+  border: none;
+  font-size: 2rem;
+  color: black;
   cursor: pointer;
 }
 
-#headerMain #headerContent nav .mainmenuitems li {
-  width: 70%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  font-size: 2rem;
-}
-
-#headerMain #headerContent nav .mainmenuitems li a {
-  font-size: 2rem;
-  color: black;
-}
-
-#headerMain #headerContent nav .menuwrap {
+#headerMain #headerContent nav .dropdown-content {
   position: absolute;
-  background-color: whitesmoke;
-  top: 103%;
-  left: 0;
+  top: 100%;
+  left: 0%;
+  display: none;
   width: 100vw;
-  height: 0;
-  overflow: hidden;
+  padding: 1rem;
+  background-color: whitesmoke;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+}
+
+#headerMain #headerContent nav .dropdown-content h2 {
+  padding: 0 0 1rem 14rem;
+}
+
+#headerMain #headerContent nav .drop-from:hover .dropdown-content {
+  display: block;
+}
+
+#headerMain #headerContent nav .drop-from:hover .drop-btn {
+  text-decoration: underline;
+}
+
+#headerMain #headerContent nav .column a:hover {
+  color: #fcb0b3;
+}
+
+#headerMain #headerContent nav .items-wrap {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  border-bottom: 1px solid black;
 }
 
-#headerMain #headerContent nav .menuwrap .menuitems {
-  margin: 1rem;
-  margin-left: 10rem;
-  padding-left: 2rem;
-}
-
-#headerMain #headerContent nav .menuwrap .menuitems h3 {
+#headerMain #headerContent nav .items-wrap a, #headerMain #headerContent nav .items-wrap h3 {
+  display: block;
+  color: black;
   margin-bottom: 0.5rem;
 }
 
-#headerMain #headerContent nav .menuwrap .menuitems li {
-  margin-bottom: 0.5rem;
-  font-size: 1rem;
-  cursor: pointer;
-  -webkit-transition: color 0.5s linear;
-  transition: color 0.5s linear;
+#headerMain #headerContent nav .items-wrap .column {
+  padding-left: 14rem;
 }
 
-#headerMain #headerContent nav .menuwrap .menuitems li:hover {
-  color: #fcb0b3;
-}
-
-body {
-  margin: auto;
-  background-color: whitesmoke;
-  /*placeholder*/
-  width: 100vw;
-  overflow-x: hidden;
-}
-
-h2 {
-  padding-left: 2rem;
-}
-
-section {
-  padding: 2rem 2rem;
-}
-
-main {
-  max-width: 80%;
-  margin: auto;
-  padding: 3em 0;
-  background-color: whitesmoke;
+#heroSection {
+  padding: 0;
 }
 
 #heroSection figure {
@@ -273,9 +272,7 @@ main {
   padding-bottom: 8em;
   margin: auto;
   height: 20vw;
-  /* placeholder -  er blevet ændret, måske det er godt.*/
   background-color: #5c6f68;
-  /*placeholder*/
 }
 
 #sektionerSection h2 {
@@ -798,7 +795,7 @@ main {
 }
 
 #about {
-  padding-top: 8rem;
+  padding: 8rem 0 0 0;
 }
 
 #about h3 {
@@ -838,11 +835,9 @@ main {
   width: 100%;
 }
 
-#history p {
+#history h4 {
   text-align: center;
-  width: 40%;
-  margin: auto;
-  margin-bottom: 2%;
+  margin-top: 2rem;
 }
 
 #grid-history div {
@@ -872,7 +867,7 @@ main {
   cursor: pointer;
 }
 
-article {
+#grid-history article {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -891,9 +886,8 @@ article {
   margin: auto;
 }
 
-article p {
+#grid-history article p {
   margin-bottom: 3%;
-  text-align: center;
 }
 
 #offers {
@@ -959,7 +953,8 @@ footer {
 }
 
 #footer-wrap form fieldset {
-  border: none;
+  border: 1px solid black;
+  padding: 1rem;
 }
 
 #footer-wrap form .fields {
@@ -970,6 +965,7 @@ footer {
   padding: 0.5rem;
   width: 70%;
   background-color: whitesmoke;
+  border: none;
 }
 
 #footer-wrap form #message-wrap {
