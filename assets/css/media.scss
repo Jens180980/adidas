@@ -34,6 +34,29 @@ $mobile: 580px;
             font-size: 1.7vw;
         }
     }
+    #footer-wrap{
+        grid-template-columns: auto;
+        section{
+            gap: 10%;
+            h3{
+                font-size: 2rem;
+            }
+            li{
+                font-size: 1rem;
+            }
+        }
+        form{
+            justify-self: none;
+            width: 100%;
+            legend {
+                font-size: 1.3rem;
+            }
+        }
+        article{
+            grid-row: 3;
+            grid-column: 1;
+        }
+    }
   }
 }
 @media screen and (max-width: $mobile){
@@ -72,9 +95,13 @@ $mobile: 580px;
             }
         }
         #footer-wrap{
-            grid-template-columns: auto;
             section{
-                grid-template-columns: auto;
+                h3{
+                    font-size: 1.3rem;
+                }
+                li{
+                    font-size: 0.8rem;
+                }
             }
         }
     }
