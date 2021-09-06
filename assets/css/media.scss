@@ -14,17 +14,45 @@ $mobile: 580px;
     #headerMain{ 
         #headerContent{
             nav{
+                .drop-from, #about-trigger {
+                    height: 100%;
+                    width: 100%;
+                    padding: 5rem 0 0 2rem;
+                }
+        
+                .drop-btn, #about-trigger {
+                    background-color: transparent;
+                    border: none;
+                    font-size: 1.5rem;
+                    color: black;
+                    cursor: pointer;
+                }
+                
+                width: 90%;
+                h3 {
+                    font-size: 100%;
+                }
                 .dropdown-content{
 
                     h2{
                         padding-left: 10%;
+                        font-size: 100%;
                     }
                 }
+            }
+            svg {
+                width: 15%;
             }
             .items-wrap{
                 .column{
                     padding-left: 30%;
                 }
+            }
+            .drop-btn {
+                font-size: 1rem;
+            }
+            #about-trigger {
+                font-size: 1rem;
             }
         }
     }
@@ -39,6 +67,58 @@ $mobile: 580px;
 @media screen and (max-width: $mobile){
     body{
     background-color: $bg-green;
+
+    #cloth-content, #shoe-content, #access-content {
+        padding-left: 1em;
+        a, h3 {
+            font-size: 70%;
+            padding-left: -10em;
+        }
+    }
+    #headerMain{ 
+        #headerContent{
+            nav{
+                .drop-from, #about-trigger {
+                    height: 100%;
+                    width: 100%;
+                    padding: 5rem 0 0 2rem;
+                }
+        
+                .drop-btn, #about-trigger {
+                    background-color: transparent;
+                    border: none;
+                    font-size: 1rem;
+                    color: black;
+                    cursor: pointer;
+                }
+                
+                h3 {
+                    font-size: 50%;
+                }
+                .dropdown-content{
+
+                    h2{
+                        padding-left: 10%;
+                        font-size: 50%;
+                    }
+                }
+            }
+            svg {
+                width: 20%;
+            }
+            .items-wrap{
+                .column{
+                    padding-left: 30%;
+                }
+            }
+            .drop-btn {
+                font-size: 50%;
+            }
+            #about-trigger {
+                font-size: 1rem;
+            }
+        }
+    }
         #heroSection{
             figure{
                 grid-template-columns: auto;
@@ -77,5 +157,12 @@ $mobile: 580px;
                 grid-template-columns: auto;
             }
         }
+    }
+
+    .tooltip {
+        font-size: 40%;
+    }
+    .slideShow {
+        border: .2em;
     }
 }
