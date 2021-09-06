@@ -2,21 +2,114 @@
   body {
     background-color: #fc6;
   }
+  body #headerMain #headerContent nav {
+    width: 90%;
+  }
+  body #headerMain #headerContent nav .drop-from, body #headerMain #headerContent nav #about-trigger {
+    height: 100%;
+    width: 100%;
+    padding: 5rem 0 0 2rem;
+  }
+  body #headerMain #headerContent nav .drop-btn, body #headerMain #headerContent nav #about-trigger {
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+    color: black;
+    cursor: pointer;
+  }
+  body #headerMain #headerContent nav h3 {
+    font-size: 100%;
+  }
   body #headerMain #headerContent nav .dropdown-content h2 {
     padding-left: 10%;
+    font-size: 100%;
+  }
+  body #headerMain #headerContent svg {
+    width: 15%;
   }
   body #headerMain #headerContent .items-wrap .column {
     padding-left: 30%;
   }
+  body #headerMain #headerContent .drop-btn {
+    font-size: 1rem;
+  }
+  body #headerMain #headerContent #about-trigger {
+    font-size: 1rem;
+  }
   body #grid-history .btn {
     width: 70%;
     font-size: 1.7vw;
+  }
+  body #footer-wrap {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+  }
+  body #footer-wrap section {
+    gap: 10%;
+  }
+  body #footer-wrap section h3 {
+    font-size: 2rem;
+  }
+  body #footer-wrap section li {
+    font-size: 1rem;
+  }
+  body #footer-wrap form {
+    -ms-grid-column-align: none;
+        justify-self: none;
+    width: 100%;
+  }
+  body #footer-wrap form legend {
+    font-size: 1.3rem;
+  }
+  body #footer-wrap article {
+    -ms-grid-row: 3;
+    grid-row: 3;
+    -ms-grid-column: 1;
+    grid-column: 1;
   }
 }
 
 @media screen and (max-width: 580px) {
   body {
     background-color: #9c9;
+  }
+  body #cloth-content, body #shoe-content, body #access-content {
+    padding-left: 1em;
+  }
+  body #cloth-content a, body #cloth-content h3, body #shoe-content a, body #shoe-content h3, body #access-content a, body #access-content h3 {
+    font-size: 70%;
+    padding-left: -10em;
+  }
+  body #headerMain #headerContent nav .drop-from, body #headerMain #headerContent nav #about-trigger {
+    height: 100%;
+    width: 100%;
+    padding: 5rem 0 0 2rem;
+  }
+  body #headerMain #headerContent nav .drop-btn, body #headerMain #headerContent nav #about-trigger {
+    background-color: transparent;
+    border: none;
+    font-size: 1rem;
+    color: black;
+    cursor: pointer;
+  }
+  body #headerMain #headerContent nav h3 {
+    font-size: 50%;
+  }
+  body #headerMain #headerContent nav .dropdown-content h2 {
+    padding-left: 10%;
+    font-size: 50%;
+  }
+  body #headerMain #headerContent svg {
+    width: 20%;
+  }
+  body #headerMain #headerContent .items-wrap .column {
+    padding-left: 30%;
+  }
+  body #headerMain #headerContent .drop-btn {
+    font-size: 50%;
+  }
+  body #headerMain #headerContent #about-trigger {
+    font-size: 1rem;
   }
   body #heroSection figure {
     -ms-grid-columns: auto;
@@ -73,13 +166,27 @@
   body #grid-history p {
     font-size: 3vw;
   }
+
+  body #grid-history article iframe {
+    width: 100%;
+    height: auto;
+  }
   body #footer-wrap {
     -ms-grid-columns: auto;
         grid-template-columns: auto;
+
+  body #footer-wrap section h3 {
+    font-size: 1.3rem;
+
   }
-  body #footer-wrap section {
-    -ms-grid-columns: auto;
-        grid-template-columns: auto;
+  body #footer-wrap section li {
+    font-size: 0.8rem;
+  }
+  .tooltip {
+    font-size: 40%;
+  }
+  .slideShow {
+    border: .2em;
   }
   body #footer-wrap section h3 {
     font-size: 1.6rem;
