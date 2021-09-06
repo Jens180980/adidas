@@ -14,6 +14,7 @@ Fredag: release 2 (scrummaster Magnus)
 =======
 
 opgave fordelning:
+
 Jens:
 -undermenue til nav
 -tilbudssektion 
