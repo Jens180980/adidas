@@ -29,21 +29,21 @@ Jens:
 
 -om sektion 
 
-Tobias:
+<br>Tobias:
 
 -hero sektion 
 
-Magnus:
+<br>Magnus:
 
 -HTML/CSS basis
 
 -slideshow/kollektion 
 
-Eva:
+<br>Eva:
 
 -page loader 
 
-Fælles:
+<br>Fælles:
 
 -media queries
 
