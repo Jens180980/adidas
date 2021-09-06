@@ -16,26 +16,38 @@ Fredag: release 2 (scrummaster Magnus)
 opgave fordelning:
 
 Jens:
+
 -undermenue til nav
+
 -tilbudssektion 
+
 -footer
 
 Maria:
+
 -header/nav
+
 -om sektion 
 
 Tobias:
+
 -hero sektion 
 
 Magnus:
+
 -HTML/CSS basis
+
 -slideshow/kollektion 
 
 Eva:
+
 -page loader 
 
 Fælles:
+
 -media queries
+
 -finpudsning af kode
+
 
 Link til Zenhub: https://app.zenhub.com/workspaces/adidas-gruppen-612cb4df4709f1001dcd8644/board
