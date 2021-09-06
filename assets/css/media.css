@@ -114,6 +114,7 @@
   }
   body #grid-history article iframe {
     width: 100%;
+    height: auto;
   }
   body #footer-wrap {
     -ms-grid-columns: auto;
