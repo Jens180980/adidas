@@ -112,6 +112,9 @@
   body #grid-history p {
     font-size: 3vw;
   }
+  body #grid-history article iframe {
+    width: 100%;
+  }
   body #footer-wrap {
     -ms-grid-columns: auto;
         grid-template-columns: auto;
