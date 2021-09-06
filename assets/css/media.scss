@@ -38,25 +38,56 @@ $mobile: 580px;
 }
 @media screen and (max-width: $mobile){
     body{
-    background-color: $bg-green;
+        background-color: $bg-green;    
         #heroSection{
             figure{
                 grid-template-columns: auto;
                 h3{
                     padding: 0;
+                    font-size: 150%;
                 }
                 p{
                     font-size: 2.5vw;
-                    padding: 0;
+                    padding: 10px 0;
                 }
                 figcaption{
                     height: 100%;
                 }
             }
         }
+
+        #sektionerSection {
+            padding: 2em 0;
+            height: auto; 
+        
+            h2 {
+                font-size: 200%;
+                padding-bottom: 0.5em;
+                padding-left: 0;
+                margin-top: 0;
+                text-align: center;
+            }
+            h3 {
+                margin-left: 0;
+                font-size: 100%;
+                text-align: center;
+            }
+        }
+
+        #about {
+            padding-top: 5rem;
+            h3 {
+                font-size: 1.5rem;
+                padding: 1rem;        
+            }
+        }
+
         #history{
             figure{
                 grid-template-columns: auto;
+            }
+            h3 {
+                font-size: 1.5rem;
             }
             p{
                 font-size: 3vw;
@@ -75,6 +106,19 @@ $mobile: 580px;
             grid-template-columns: auto;
             section{
                 grid-template-columns: auto;
+                h3 {
+                    font-size: 1.6rem;
+                }
+            }
+
+            form {
+                legend {
+                    font-size: 1.6rem;
+                }
+            }
+
+            p {
+                text-align: center;
             }
         }
     }

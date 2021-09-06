@@ -217,6 +217,7 @@ main {
 
 #heroSection {
   padding: 0;
+  letter-spacing: 1px;
 }
 
 #heroSection figure {
@@ -242,7 +243,7 @@ main {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  line-height: 2.4vw;
+  line-height: 1.4;
 }
 
 #heroSection figure p a {
