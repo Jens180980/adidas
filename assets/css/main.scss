@@ -175,9 +175,8 @@ svg {
 
 // Hero section
 #heroSection {
-
     padding: 0;
-    
+    letter-spacing: 1px;
     figure {
         display: grid;
         grid-template-columns: 40% 60%;
@@ -192,7 +191,7 @@ svg {
             padding: 20px 0 0 5%;
             font-size: 1.7vw;
             align-self: center;
-            line-height: 2.4vw;
+            line-height: 1.4;
             a {
                 color: black;
                 font-weight: bold;
