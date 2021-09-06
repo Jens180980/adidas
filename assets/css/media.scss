@@ -173,6 +173,12 @@ $mobile: 580px;
             p{
                 font-size: 3vw;
             }
+            article {
+                iframe {
+                    width: 100%;
+                    height: auto;
+                }
+            }
         }
         #footer-wrap{
             section{

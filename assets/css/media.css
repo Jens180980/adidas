@@ -139,8 +139,18 @@
   body #grid-history p {
     font-size: 3vw;
   }
+
+  body #grid-history article iframe {
+    width: 100%;
+    height: auto;
+  }
+  body #footer-wrap {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+
   body #footer-wrap section h3 {
     font-size: 1.3rem;
+
   }
   body #footer-wrap section li {
     font-size: 0.8rem;
