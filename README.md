@@ -8,9 +8,46 @@ release 2 deadline (også sprint 2) fredag middag.
 
 Mandag: forberedelse
 Tirsdag: release 1 (scrummaster Jens)
-Onsdag: release 1 (scrummaster ?)
-Torsdag: release 2 (scrummaster ?)
-Fredag: release 2 (scrummaster ?)
+Onsdag: release 1 (scrummaster Maria)
+Torsdag: release 2 (scrummaster Tobias)
+Fredag: release 2 (scrummaster Magnus)
 =======
+
+opgave fordelning:
+
+Jens:
+
+-undermenue til nav
+
+-tilbudssektion 
+
+-footer 
+
+<br>Maria:
+
+-header/nav
+
+-om sektion 
+
+<br>Tobias:
+
+-hero sektion 
+
+<br>Magnus:
+
+-HTML/CSS basis
+
+-slideshow/kollektion 
+
+<br>Eva:
+
+-page loader 
+
+<br>Fælles:
+
+-media queries
+
+-finpudsning af kode
+
 
 Link til Zenhub: https://app.zenhub.com/workspaces/adidas-gruppen-612cb4df4709f1001dcd8644/board
