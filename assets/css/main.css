@@ -37,7 +37,9 @@ main {
   width: 100%;
   height: 100%;
   background: white;
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -217,6 +219,7 @@ main {
 
 #heroSection {
   padding: 0;
+  letter-spacing: 1px;
 }
 
 #heroSection figure {
@@ -242,7 +245,7 @@ main {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  line-height: 2.4vw;
+  line-height: 1.4;
 }
 
 #heroSection figure p a {

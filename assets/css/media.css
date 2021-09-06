@@ -1,7 +1,4 @@
 @media screen and (max-width: 980px) {
-  body {
-    background-color: #fc6;
-  }
   body #headerMain #headerContent nav {
     width: 90%;
   }
@@ -70,9 +67,6 @@
 }
 
 @media screen and (max-width: 580px) {
-  body {
-    background-color: #9c9;
-  }
   body #cloth-content, body #shoe-content, body #access-content {
     padding-left: 1em;
   }
@@ -117,17 +111,44 @@
   }
   body #heroSection figure h3 {
     padding: 0;
+    font-size: 150%;
   }
   body #heroSection figure p {
     font-size: 2.5vw;
-    padding: 0;
+    padding: 10px 0;
   }
   body #heroSection figure figcaption {
     height: 100%;
   }
+  body #sektionerSection {
+    padding: 2em 0;
+    height: auto;
+  }
+  body #sektionerSection h2 {
+    font-size: 200%;
+    padding-bottom: 0.5em;
+    padding-left: 0;
+    margin-top: 0;
+    text-align: center;
+  }
+  body #sektionerSection h3 {
+    margin-left: 0;
+    font-size: 100%;
+    text-align: center;
+  }
+  body #about {
+    padding-top: 5rem;
+  }
+  body #about h3 {
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
   body #history figure {
     -ms-grid-columns: auto;
         grid-template-columns: auto;
+  }
+  body #history h3 {
+    font-size: 1.5rem;
   }
   body #history p {
     font-size: 3vw;
@@ -139,10 +160,27 @@
   body #grid-history p {
     font-size: 3vw;
   }
+  body #grid-history article iframe {
+    width: 100%;
+    height: auto;
+  }
+  body #footer-wrap section {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+  }
   body #footer-wrap section h3 {
+    font-size: 1.6rem;
+  }
+  body #footer-wrap form legend {
+    font-size: 1.6rem;
+  }
+  body #footer-wrap p {
+    text-align: center;
+  }
+  body #footer-wrap p h3 {
     font-size: 1.3rem;
   }
-  body #footer-wrap section li {
+  body #footer-wrap p li {
     font-size: 0.8rem;
   }
   .tooltip {
