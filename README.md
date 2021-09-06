@@ -21,9 +21,9 @@ Jens:
 
 -tilbudssektion 
 
--footer <br>
+-footer 
 
-Maria:
+<br>Maria:
 
 -header/nav
 
