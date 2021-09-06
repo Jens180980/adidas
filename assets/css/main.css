@@ -37,7 +37,9 @@ main {
   width: 100%;
   height: 100%;
   background: white;
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;

@@ -10,7 +10,6 @@ $mobile: 580px;
 
 @media screen and (max-width: $tablet) {
   body{
-    background-color: $bg-yellow; 
     #headerMain{ 
         #headerContent{
             nav{
@@ -89,8 +88,6 @@ $mobile: 580px;
 }
 @media screen and (max-width: $mobile){
     body{
-        background-color: $bg-green;    
-    background-color: $bg-green;
 
     #cloth-content, #shoe-content, #access-content {
         padding-left: 1em;
