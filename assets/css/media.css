@@ -40,6 +40,33 @@
     width: 70%;
     font-size: 1.7vw;
   }
+  body #footer-wrap {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+  }
+  body #footer-wrap section {
+    gap: 10%;
+  }
+  body #footer-wrap section h3 {
+    font-size: 2rem;
+  }
+  body #footer-wrap section li {
+    font-size: 1rem;
+  }
+  body #footer-wrap form {
+    -ms-grid-column-align: none;
+        justify-self: none;
+    width: 100%;
+  }
+  body #footer-wrap form legend {
+    font-size: 1.3rem;
+  }
+  body #footer-wrap article {
+    -ms-grid-row: 3;
+    grid-row: 3;
+    -ms-grid-column: 1;
+    grid-column: 1;
+  }
 }
 
 @media screen and (max-width: 580px) {
@@ -112,13 +139,11 @@
   body #grid-history p {
     font-size: 3vw;
   }
-  body #footer-wrap {
-    -ms-grid-columns: auto;
-        grid-template-columns: auto;
+  body #footer-wrap section h3 {
+    font-size: 1.3rem;
   }
-  body #footer-wrap section {
-    -ms-grid-columns: auto;
-        grid-template-columns: auto;
+  body #footer-wrap section li {
+    font-size: 0.8rem;
   }
   .tooltip {
     font-size: 40%;
